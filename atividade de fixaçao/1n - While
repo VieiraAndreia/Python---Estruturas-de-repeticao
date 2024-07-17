@@ -1,0 +1,27 @@
+#Programa que lê valores sucessivamente, imprime o somatório, média e total de valores com While.  O programa deve parar com valores negativos.
+
+soma=0
+cont=1
+while True:
+    num=int(input("Digite um valor: "))
+    if num<0:
+        break
+    soma+=num
+    media=soma/cont
+    cont+=1
+print(f"O somatorio é: {soma}")
+print(f"A média é: {media}")
+print(f"O total de valores é: {cont-1}")
+
+
+#Explicação do código: 
+# 1) "soma" inicia com 0
+# 2) "cont" inicia com 1, pois seria o 1° valor inserido
+# 3)  o  loop acontece com um valor booleano True, ou seja, vai acontecer sucessivamente até a regra ser quebrada.
+# 4) dentro do loop a variável "num" pede os valores.
+# 5) o if identifica se foi digitado algum número negativo.
+# 6) o break para o programa se a condição do if for verdadeira.
+# 7) "soma+=num" adiciona o valor digitado ao somatorio 
+# 8) "media" calcula a média dos valores digitados
+# 9) "cont+=1" adiciona +1 ao "cont" sempre que algum valor for digitado, com exceção dos números negativos que não contam.
+#OBSERVAÇÃO: esse programa não pode ser feito com o loop "for" devido não ter limite de valores. 
